@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+// import css files
+import "./index.css";
 import './App.css';
+// import Hangman component
+import Hangman from './components/Hangman';
 
+
+// the App component returns a div containing the Hangman component
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hangman />
     </div>
   );
 }
 
+// export the App component
 export default App;
